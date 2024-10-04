@@ -4,46 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Helen Lin</title>
-  <link href="./src/output.css" rel="stylesheet">
+  <link href="src/output.css" rel="stylesheet">
 </head>
-<body>
-  <nav>
-    <ul>
-      <li>About Me</li>
-      <li>Projects</li>
-      <li>Contact Me</li>
-    </ul>
+<body class="bg-blue-400 pt-10">
+  <nav class="flex-no-wrap fixed top-0 z-10 flex w-full items-center justify-between bg-[#f1f1f1] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4">
+        <div>
+          <a href="#welcome">Home</a>
+          <a href="#aboutMe">About Me</a>
+          <a href="#tech-skills">Tech Skills</a>
+          <a href="">Projects</a>
+          <a href="">Contact Me</a>
+          <a href="#Lower">Test</a>
+        </div>
+
   </nav>
-  <div id="bodyContainer" class="px-60 m-9">
-  <h1 class="">Welcome to Helen's Website
-    A Software Developer based in Calgary, Alberta</h1>
-  <section id="AboutMe">
-    <h2>About me</h2>
+  <div id="bodyContainer" class="px-12 m-9">
+  <section id="welcome" class="section text-center">
+    <h1 class="text-6xl">Welcome to Helen's Website</h1>
+    <p class="text-center m-2"> A Software Developer based in Calgary, Alberta</p>
+  </section>
+  <section id="aboutMe" class="section">
+    <h2 class="text-5xl m-9 text-center">About me</h2>
     <p>I'm a Junior Software Developer currently looking for work in the web application field. Prior to that I was a junior software developer at C4i training in technology where I worked with WPF applications.
       My passion is helping people find solutions through code.
     </p>
-    <h3>Technical Skills</h3>
-    <h2>Programming languages</h2>
-    <ul>
-      <li>C#</li>
-      <li>HTML/CSS#</li>
-      <li>JavaScript</li>
-
-      <li>React</li>
-      <li>Node.js</li>
-      <li>Express.js</li>
-
-      <h2>Software</h2>
-      <ul><li>Visual Studio, Entity Framework, SQL Server Management Studio, Oracle, ASP.Net, Windows Service</li>
-        <li>Git and Github</li>
-      </ul>
-      
-    </ul>
-    <h2>Frameworks</h2>
-    <ul>
-
-    </ul>
   </section>
+  <section id="tech-skills" class="section">
+      <h3 class="text-4xl text-center m-2">Technical Skills</h3>
+      <div id="skillsContainer" class="flex">
+        <div id="lang-container" class="card">
+          <h2 class="text-3xl">Programming languages</h2>
+          <ul>
+            <li>C#</li>
+            <li>HTML/CSS#</li>
+            <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div id="software-container" class="card">
+        <h2 class="text-3xl">Software</h2>
+        <ul>
+          <li>Visual Studio, Entity Framework, SSMS, Oracle, ASP.Net, Windows Service</li>
+          <li>Git and Github</li>
+        </ul>     
+        </div>
+      
+        <div id="frameworks-container" class="card">
+          <h2 class="text-3xl">Frameworks</h2>
+          <ul>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+          </ul>
+        </div>
+
+     
+    </div>
+  </section>
+  <div id="Lower" class="m-96">
+    <h2>Secret area</h2>
+  </div>
 </div>
 </body>
 </html>

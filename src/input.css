@@ -2,14 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family: 'Times New Roman', Times, serif;
-}
-
 @layer components{
   .card{
-    @apply flex items-center justify-center;
-    display:flex;
-    background-color: theme("colors.twitter-blue");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0.5rem;
+    background-color: #6B7280;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+  }
+
+  .section{
+    margin: 2rem;
   }
 }

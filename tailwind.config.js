@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: [
+    './index.html', 
+  ],
   theme: {
     extend: {
-      colors:{
-        "twitter-blue": "#1DA1F2",
-      },
     },
   },
   plugins: [],
